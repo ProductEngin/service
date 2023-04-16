@@ -7,7 +7,7 @@ public class Greeting {
 
     public Greeting() {
     }
-    //commit 1
+    
 
     public Greeting(long id, String content) {
         this.id = id;
