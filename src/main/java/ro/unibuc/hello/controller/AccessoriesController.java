@@ -5,6 +5,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import ro.unibuc.hello.dto.Accessories;
+import ro.unibuc.hello.service.AccessoriesService;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/accessories")
