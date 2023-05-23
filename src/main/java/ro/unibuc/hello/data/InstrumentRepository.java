@@ -13,14 +13,6 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface InstrumentRepository extends MongoRepository<Instrument, String> {
-
-    InformationEntity findById(int Id);
-    List<Instrument> findByType(String type);
-    List<Instrument> getAll();
-    Instrument getById(long id);
-    Instrument updateInstrument(Instrument instrument);
-    Instrument deleteInstrument(Instrument instrument);
-    Instrument addInstrument(Instrument instrument);
     
-
+    
 }
