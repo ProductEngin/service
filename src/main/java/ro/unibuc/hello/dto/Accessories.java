@@ -1,4 +1,5 @@
 // JavaScript source code
+package ro.unibuc.hello.dto;
 
 public class Accessories {
     private int id;
