@@ -57,5 +57,16 @@ public class Accessories {
     public void setMaterial(String material) {
         this.material = material;
     }
+
+     @Override
+    public String toString() {
+        return "Accesory{" +
+                ", name=" + name +
+                ", id='" + id + '\'' +
+                ", price='" + price + '\'' +
+                ", material= '"+ material +'\'' +
+                ", color= '" + color +'\'' +
+                '}';
+    }
   }
   
