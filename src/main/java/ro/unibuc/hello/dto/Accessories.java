@@ -10,8 +10,8 @@ public class Accessories {
   
     public Accessories() {}
   
-    public Accessories(int id, String name, double price, String color, String material) {
-        this.id = id;
+    public Accessories(long l, String name, double price, String color, String material) {
+        this.id = (int) l;
         this.name = name;
         this.price = price;
         this.color = color;
@@ -22,8 +22,8 @@ public class Accessories {
         return id;
     }
   
-    public void setId(int id) {
-        this.id = id;
+    public void setId(long l) {
+        this.id = (int) l;
     }
   
     public String getName() {
@@ -67,6 +67,10 @@ public class Accessories {
                 ", material= '"+ material +'\'' +
                 ", color= '" + color +'\'' +
                 '}';
+    }
+
+    public Accessories get() {
+        return null;
     }
   }
   

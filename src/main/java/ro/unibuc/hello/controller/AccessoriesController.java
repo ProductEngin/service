@@ -1,12 +1,13 @@
 package ro.unibuc.hello.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import ro.unibuc.hello.dto.Accessories;
-import ro.unibuc.hello.service.AccessoriesService;
+// import ro.unibuc.hello.service.AccessoriesService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController

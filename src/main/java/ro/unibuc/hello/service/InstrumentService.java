@@ -1,7 +1,7 @@
 package ro.unibuc.hello.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+// import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 //import ro.unibuc.hello.data.InformationEntity;
@@ -14,7 +14,9 @@ import ro.unibuc.hello.exception.EntityNotFoundException;
 import java.util.List;
 //import java.util.Map;
 //import java.util.concurrent.atomic.AtomicLong;
+// import java.util.Optional;
 import java.util.Optional;
+
 
 //import javax.sound.midi.Instrument;
 
@@ -23,7 +25,7 @@ public class InstrumentService {
 
     
     private final InstrumentRepository instrumentsRepository;
-    @Autowired
+   
     public InstrumentService(InstrumentRepository instrumentRepository){
             this.instrumentsRepository=instrumentRepository;
     }
@@ -51,6 +53,20 @@ public class InstrumentService {
 
         System.out.println(instrument);
         instrumentsRepository.save(instrument);
+        
+    }
+    public Instrument getById(String id){
+        long id1=0;
+        Boolean instrument=instrumentsRepository.existsById(id);
+        if(instrument==false)
+        {
+            throw new EntityNotFoundException("Instrument not found");
+        }
+        else 
+        {
+            Instrument ins=instrumentsRepository.findbyId(id);
+            return ins;
+        }
     }
     
 
